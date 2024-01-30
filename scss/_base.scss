@@ -1,0 +1,181 @@
+@charset "UTF-8";
+//=======Font Integration=====
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('../fonts/RFDewiExpanded-Bold.eot');
+    src: local('RF Dewi Expanded Bold'), local('RFDewiExpanded-Bold'),
+        url('../fonts/RFDewiExpanded-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewiExpanded-Bold.woff2') format('woff2'),
+        url('../fonts/RFDewiExpanded-Bold.woff') format('woff'),
+        url('../fonts/RFDewiExpanded-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('../fonts/RFDewi-Semibold.eot');
+    src: local('RF Dewi Semibold'), local('RFDewi-Semibold'),
+        url('../fonts/RFDewi-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewi-Semibold.woff2') format('woff2'),
+        url('../fonts/RFDewi-Semibold.woff') format('woff'),
+        url('../fonts/RFDewi-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('../fonts/RFDewi-Bold.eot');
+    src: local('RF Dewi Bold'), local('RFDewi-Bold'),
+        url('../fonts/RFDewi-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewi-Bold.woff2') format('woff2'),
+        url('../fonts/RFDewi-Bold.woff') format('woff'),
+        url('../fonts/RFDewi-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RF Dewi';
+    src: url('../fonts/RFDewi-Regular.eot');
+    src: local('RF Dewi Regular'), local('RFDewi-Regular'),
+        url('../fonts/RFDewi-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewi-Regular.woff2') format('woff2'),
+        url('../fonts/RFDewi-Regular.woff') format('woff'),
+        url('../fonts/RFDewi-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('../fonts/RFDewiExpanded-Semibold.eot');
+    src: local('RF Dewi Expanded Semibold'), local('RFDewiExpanded-Semibold'),
+        url('../fonts/RFDewiExpanded-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RFDewiExpanded-Semibold.woff2') format('woff2'),
+        url('../fonts/RFDewiExpanded-Semibold.woff') format('woff'),
+        url('../fonts/RFDewiExpanded-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+html{
+	scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.row-mob{
+    @media(max-width: 1200px){
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
+}
+
+//Style
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'RF Dewi', sans-serif;
+}
+h1, h2, h3,h4, h5, h6, p, span,a {
+	font-family: RF Dewi;
+	color: #FFF;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	box-sizing: border-box;
+}
+li {
+	list-style-type: none;
+}
+
+dl, ol, ul {
+  margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+input {
+	&:focus {
+		outline: none;
+	}
+}
+
+body, html {
+	// overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+.container {
+	max-width: 1310px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+@media (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}	
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+
+	.col-lg-4 {
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+	}
+}	
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}	
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}	
+@media (min-width: 1250px) {
+	.container {
+		max-width: 1190px;
+	}
+}
+@media (min-width: 1366px) {
+	.container {
+		max-width: 1310px;
+		padding: 0 15px;
+	}
+}	
+
+.container {
+	padding: 0 15px;
+}
+.text-center {
+	text-align: center;
+}
+.mx-auto {
+	margin-left: auto!important;
+    margin-right: auto!important;
+}
+.w-100 {
+  width: 100% !important;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+

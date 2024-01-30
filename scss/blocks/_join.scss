@@ -1,0 +1,127 @@
+.join{
+    padding: 86px 0 74px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000 100%);
+        pointer-events: none; 
+    }
+}
+.row {
+    display: flex;
+    @media(max-width:992px){
+        display: flex;
+        flex-wrap:wrap;
+    }
+}
+.join-info {
+    max-width: 736px;
+    margin-right: 103px;
+    @media(max-width:992px){
+        margin-right: 35px;
+        margin-bottom: 44px;
+    }
+    @media(max-width:768px){
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+}
+.form{
+    max-width: 350px;
+    width: 100%;
+    @media(max-width:1200px){
+        max-width: 290px;
+    }
+    @media(max-width:768px){
+        max-width: 100%;
+    }
+}
+.join-info__title {
+    font-family: RF Dewi Expanded;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 37px;
+    @media(max-width:1200px){
+        font-size: 28px;
+    }
+    @media(max-width:992px){
+        font-size: 23px;
+        margin-bottom: 15px;
+    }
+    @media(max-width:768px){
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
+.join-info__subtitle {
+    opacity: 0.6;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    @media(max-width:768px){
+        margin-bottom: 29px;
+    }
+}
+
+.join-form__input {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    padding: 15px 34px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), rgba(0, 0, 0, 0.30);
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-family: RF Dewi Expanded;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    justify-content: space-between;
+    outline: none;
+    margin-bottom: 18px;
+    &::placeholder{
+        color: #FFF;
+        font-family: RF Dewi Expanded;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        opacity: 0.6;
+    }
+}
+
+.join-form__box svg{
+    position: absolute;
+    left: 34px;
+    top: 17px;
+    bottom: 17px;
+}
+.join-button{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 15px 44px;
+}
+.submit-button{
+    color: #000;
+    font-family: RF Dewi Expanded;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+}
+.wpcf7 {
+    margin-bottom: 0; 
+}
+
+

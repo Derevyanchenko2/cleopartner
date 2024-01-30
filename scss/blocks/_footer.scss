@@ -1,0 +1,116 @@
+.footer {
+    padding: 36px 0 76px 0;
+    background: #1E1E1E;
+}
+
+//footer-top
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 47px;
+}
+.footer-logo {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+.footer-menu ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.footer-menu ul li a{
+    color: #FFF;
+    font-size: 18.129px;
+    font-weight: 600;
+    line-height: 129.188%;
+    opacity:0.6;
+    &:hover{
+        opacity: 1;
+        transition: 0.4s;
+    }
+}
+//***//footer-top
+
+//footer bottom
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-copy__social{
+    display: flex;
+    align-items: center;
+}
+.footer-social{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+.footer-social__item{
+    &:hover{
+        transition: 0.4s;
+        scale:1.3;
+    }
+}
+
+.footer-copy__text{
+    margin-right: 19px;
+    color: #FFF;
+    font-family: RF Dewi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    opacity: 0.4;
+}
+.footer-contract{
+    display: flex;
+    gap: 30px;
+}
+.footer-contract__link{
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    opacity: 0.4;
+    &:hover{
+        transition: 0.4s;
+        opacity: 1;
+    }
+}
+.footer-bottom--mob {
+    display: none;
+}
+@media(max-width:768px){
+    .footer-menu{
+        display: none;
+    }
+    .footer-bottom{
+        display: none;
+    }
+    .footer-bottom--mob{
+        display: block;
+        margin-top: 17px;
+    }
+}
+.foter-mob__copy {
+    margin-top: 17px;
+    margin-bottom: 30px;
+}
+.foter-mob__copy-link {
+    opacity: 0.4;
+    font-size: 16px;
+    font-weight: 600;
+}
+.foter-mob__copy-link:first-child{
+    margin-bottom: 8px;
+    display: block;
+} 
+.foter-mob__social {
+    display: flex;
+    align-items: center;
+}
+.foter-mob__social{
+    margin-right: 12px;
+}

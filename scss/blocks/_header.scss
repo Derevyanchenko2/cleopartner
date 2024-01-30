@@ -1,0 +1,240 @@
+// header
+
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 26px 22px;
+    z-index: 1001; /* Увеличьте значение z-index для хедера */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), rgba(0, 0, 0, 0.30);
+    backdrop-filter: blur(2px);
+}
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}                
+.header-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.menu-item a {
+    color: #FFF;
+    text-align: center;
+    font-family: RF Dewi;
+    font-size: 18.129px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 129.188%;
+    position: relative;
+    opacity: 0.6;
+    &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -9px;
+        height: 5px;
+        width: 100%;
+        background: #f9bf29;
+        transform: scale(0);
+        transition: 0.5s transform;
+    }
+    &:hover {
+        transition: 0.4s;
+        opacity: 1;
+        &:after {
+            transform: scale(1);
+        }
+    }
+}
+
+
+// burger and mobile menu
+.burger {
+	display: none;
+}
+
+.mobileMenu {
+    margin-left: auto;
+	width: 0;
+	overflow-x: hidden;
+	height: 100vh;
+    z-index: 1001;
+    overflow-y: auto;
+    background: #000;
+	transition: all 0.3s;
+	position: relative;
+
+	&-close {
+		position: absolute;
+        color: #fff;
+        right: 15px;
+        top: 8px;
+        background: transparent;
+        border: none;
+        font-size: 40px;
+        // color: $black;
+		transition: all 0.3s;
+		&:hover {
+			opacity: 0.5;
+		}
+        img {
+            max-width: 18px;
+        }
+	}
+
+	&-overlay {
+		// display: none;
+		opacity: 0;
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+		z-index: -1;
+		transition: all 0.3s;
+	}
+
+	&-container {
+		display: flex;
+        height: auto;
+        padding: 0 15px;
+        flex-direction: column;
+        padding-top: 160px;
+        padding-bottom: 60px;
+	}
+
+	.header-menu {
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+        align-items: center;
+
+		.menu-item {
+			margin: 0;
+            margin-bottom: 25px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+	}
+
+}
+
+.mobileMenu-overlay.open {
+	z-index: 9999;
+	opacity: 1;
+	transition: all 0.3s;
+	.mobileMenu {
+        margin-left: auto;
+		width: 320px;
+		transition: all 0.3s;
+	}
+}
+
+@media (max-width: 990.99px) {
+    .header-wrapper .header-menu {
+        display: none;
+    }
+
+    .floating-btn {
+        padding: 18px 25px;
+        font-size: 20px;
+        top: auto;
+        bottom: 15px;
+        height: 52px;
+    }
+    
+    .menu-item-has-children .sub-menu {
+        display: none;
+        opacity: 1;
+        position: relative;
+        top: 0;
+        margin-top: 20;
+    }
+
+    .menu-item-has-children .sub-menu.open {
+        display: block;
+    }
+
+    .mobileMenu .header__menu .menu-item {
+        text-align: center;
+    }
+
+    .menu-item-has-children .sub-menu:before {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
+
+    .menu-item-has-children .sub-menu li {
+        text-align: center;
+    }
+
+    
+    .burger {
+        display: block;
+    }
+
+    .open-menu-js {
+		cursor: pointer;
+        margin-left: 50px;
+        margin-bottom: -11px;
+	}
+
+	.open-menu span
+	{
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin-bottom: 6px;
+        position: relative;
+        background: #fff;
+        z-index: 1;
+        margin-left: auto;
+	}
+
+	.open-menu span:first-child
+	{
+        transform-origin: 0% 0%;
+        width: 39px;
+	}
+
+    .open-menu span:last-child
+	{
+        transform-origin: 0% 0%;
+        width: 18px;
+        margin-bottom: 0;
+	}
+}
+
+@media (max-width: 992px) {
+    .header-submit{
+        display: none;
+    }
+}
+.mobileMenu-link{
+    color: #FFF;
+    font-family: RF Dewi Expanded;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    &:hover{
+        transition: 0.4s;
+        color: #E9BC47;
+    }   
+}
+
+@media(max-width:768px){
+    .logo{
+        display: block;
+        img{
+            max-width: 50%;
+        }
+    }
+}

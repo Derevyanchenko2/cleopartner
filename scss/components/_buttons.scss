@@ -1,0 +1,48 @@
+.button{
+    cursor: pointer;
+    &:hover{
+        transition: 0.4s;
+        color: #E9BC47;
+        background: #000;
+    }
+}
+.more-link {
+    font-family: RF Dewi Expanded;
+    font-size: 18.129px;
+    font-style: normal;
+    line-height: normal;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    cursor: pointer;
+    @media(max-width:992px){
+        display: none;
+    }
+    &:hover{
+        transition: 0.4s;
+        color: #E9BC47;
+    }
+}
+.consultation-button {
+    border-radius: 20px;
+    background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        rgba(255, 255, 255, 0.3);
+    padding: 14px 21px;
+    color: #fff;
+    text-align: center;
+    font-family: RF Dewi Expanded;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 157.4%; 
+
+}
+.contacts-bottom__link{
+    &:hover{
+        transition:0.4s;
+        color: #E9BC47;
+    }
+}

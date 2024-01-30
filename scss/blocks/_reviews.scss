@@ -1,0 +1,157 @@
+
+
+
+.reviews {
+    padding: 102px 0 138px 0;
+    @media(max-width:1200px){
+        padding: 90px 0 90px 0;
+    }
+    @media(max-width:768px){
+        padding: 68px 0 85px 0;
+    }
+}
+.reviews-heading {
+    margin-bottom: 55px;
+    text-align: center;
+}
+.slide {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1070px;
+    padding: 60px 70px;
+    border-radius: 61px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), rgba(0, 0, 0, 0.30);
+    transition: opacity 0.5s ease-in-out;
+    @media(max-width:992px){
+        padding: 30px 40px;
+    }
+}
+.slide-avatar {
+    margin-right: 80px;
+    @media(max-width:992px){
+        margin-right: 70px;
+    }
+    img{
+        border-radius: 39.648px;
+        @media(max-width: 992px){
+            max-width: 220px;
+            width: 100%;
+        }
+    }
+}
+.slide-arrows{
+    margin-top: 25px;
+    gap: 25px;
+    justify-content: center;
+    display: flex;
+   
+}
+.slide-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#2BE3A0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    &:hover{
+        background-color:#137953;
+        transition: 0.3s;
+    }
+}
+.slide-content {
+    padding-top: 44px;
+    @media(max-width:992px){
+        padding-top: 0;
+    }
+}
+.slide-content__text {
+    line-height: 131%;
+    max-width: 443px;
+    margin-bottom: 35px;
+}
+.slide-content__info {
+    color: #FFF;
+    font-size: 18.125px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    @media(max-width:992px){
+        font-size: 16px;
+    }
+}
+.slide-content__job{
+    margin-top: 6px;
+    opacity: 0.5;
+}
+.slider-mob{
+    display: none;
+    @media(max-width:768px){
+        display: block;
+    }
+}
+.slider-pc{
+    @media(max-width:768px){
+        display: none;
+    }
+}
+.slide-mob{
+    border-radius: 39px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), rgba(0, 0, 0, 0.30);
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1070px;
+    padding: 60px 70px;
+    border-radius: 61px;
+    transition: opacity 0.5s ease-in-out;
+    @media(max-width:768px){
+        padding: 27px;
+    }
+}
+.reviews-mob__title{
+    display: none;
+    text-align: center;
+    margin-bottom: 30px;
+    @media(max-width:768px){
+        display: block;
+    }
+}
+.reviews-pc__title{
+    @media(max-width:768px){
+        display: none;
+    }
+
+}
+.slide-content__mob-text{
+    font-size: 13px;
+    line-height: 131%
+}
+.slide-person{
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    margin-bottom: 26px;
+}
+.slide-person__img{
+    img{
+        max-width: 110px;
+        width: 100%;
+        max-height: 110px;
+        border-radius: 39.648px;
+    } 
+}
+.slide-person__info-name{
+    font-family: RF Dewi Expanded;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 6px;
+}
+.slide-person__info-job{
+    font-size: 13px;
+    font-style: normal;
+    line-height: normal;
+    opacity: 0.5;
+}

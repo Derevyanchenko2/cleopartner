@@ -1,0 +1,145 @@
+.registration {
+   padding-top: 130px;
+   padding-bottom: 160px;
+    @media(max-width:992px){
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    @media(max-width:768px){
+        padding-top: 52px;
+        padding-bottom: 180px;
+    }
+}
+.registration-title{
+    margin-bottom: 26px;
+}
+.registration-row{
+    display: flex;
+    align-items: center;
+    @media(max-width:992px){
+        flex-wrap: wrap;
+    }
+}
+.col-lg-7{
+    @media(max-width:992px){
+        max-width: 100%;
+        flex: 100%;
+    }
+}
+.registration-content{
+    max-width: 731px;
+    width: 100%;
+    @media(max-width:992px){    
+        margin-bottom: 40px;
+    }
+}
+.registration-subtitle {
+    font-family: RF Dewi Expanded;
+    font-size: 26px;
+    line-height: normal;
+    max-width: 737px;
+    width: 100%;
+    margin-bottom: 34px;
+    @media(max-width:768px){
+        font-family: RF Dewi Expanded;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+}
+.registration-list {
+    margin-bottom: 42px;
+    li{
+        display: flex;
+        font-family: RF Dewi Expanded;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+.registration-calculator__button{
+    @media(max-width:768px){
+        display: none;
+    }
+}
+.registration-list__type{
+    max-width: none;
+}
+.registration-images{
+    position: relative;
+    margin-left: 40px;
+    max-width: 468px;
+    width: 100%;
+    @media(max-width:992px){
+        max-width: 415px;
+    }
+}
+.registration-image__wrapper{
+    img{
+        height: auto;
+    }
+}
+.registration-overlay__image{
+    position: absolute;
+    top: 166px;
+}
+.registration-overlay__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+.registration-tesla__image{
+    position: absolute;
+    top: 157px;
+    @media(max-width:768px){
+        max-width: 318px;
+    }
+}
+.samsung{
+    max-width: 165px;
+    width: 100%;
+    height: auto;
+    &--1{
+        position: absolute;
+        top: 0;
+        right: 90px;
+        @media(max-width:768px){
+            max-width: 150px;
+            width: 100%;
+            position: absolute;
+            bottom: 40px;
+            right: 20px;
+        }
+    }
+    &--2{
+        position: absolute;
+        top: 100px;
+        right: 205px;
+    }
+}
+.circle {
+    border-radius: 50%;
+    animation: rotate 5s linear infinite; 
+    animation-play-state: paused; //paused animation
+    @media(max-width: 768px){
+        max-width: 326px;
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg); 
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+.calculator-button {
+    text-align: center;
+    font-family: RF Dewi Expanded;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 157.4%;
+}

@@ -1,0 +1,21 @@
+.faq-content {
+    text-align: center;
+}
+.faq-title {
+    text-align: center;
+    font-family: RF Dewi Expanded;
+    font-size: 113.047px;
+    font-style: normal;
+    margin-bottom: 88px;
+    @media(max-width:1200px){
+        font-size: 93px;
+    }
+    @media(max-width:768px){
+        font-size: 70px;
+        margin-bottom: 61px;
+    }
+}
+.arrow-faq:hover{
+    transition: 0.4s;
+    opacity: 1;
+}

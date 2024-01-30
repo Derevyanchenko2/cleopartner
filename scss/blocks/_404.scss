@@ -1,0 +1,31 @@
+.error-page {
+  padding-top: 170px;
+  padding-bottom: 75px;
+  }
+  .error-page__title{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    h1{
+      color: #e85757;
+      font-family: RF Dewi Expanded;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 25px;
+    }
+  }
+  .error-page__wrapper {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    p,a{
+      color: #000;
+      font-family: RF Dewi;
+      font-size: 20.395px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 129.188%; 
+      display: block;
+    }
+  }

@@ -1,0 +1,116 @@
+.benefits{
+   padding-bottom: 116px;
+   @media(max-width:1200px){
+    padding-bottom: 90px;
+    }
+}
+.benefits-bg--delivery{
+    padding: 98px 0;
+    @media(max-width:992px){
+        padding: 80px 0;
+    }
+    @media(max-width:768px){
+        padding-top: 69px;
+        padding-bottom: 33px;
+    }
+}
+.benefits-row{
+    display: flex;
+    align-items: center;
+    @media(max-width:992px){
+       flex-wrap: wrap;
+    }
+}
+.benefits-box{
+    max-width: 730px;
+    width: 100%;
+    padding: 49px 50px;
+    border-radius: 42px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), rgba(0, 0, 0, 0.30);
+    @media(max-width:1200px){
+        padding: 35px;
+    }
+    @media(max-width:992px){
+        padding: 0;
+        background: none;
+    }
+}
+.benefits-image{
+    max-width: 550px;
+    width: 100%;
+}
+.benefits-content{
+    max-width: 551px;
+    width: 100%;
+    margin-right: 30px;
+    @media(max-width:1200px){
+        margin-right: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+.benefits-content__title {
+    margin-bottom: 30px;
+    @media(max-width:992px){
+        width: 100%;
+    }
+}
+.benefits-list__item {
+    display: flex;
+    margin-bottom: 24px;
+}
+.benefits-list__item:last-child{
+    margin-bottom: 0;
+}
+.list-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+    background: #00BF63;;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 23px;
+    @media(max-width:768px){
+        margin-right: 15px;
+        width: 9px;
+        height: 9px;
+     }
+}
+.list-text {
+    width: 100%;
+    color: #FFF;
+    font-family: Montserrat;
+    @media(max-width:992px){
+        max-width: none;
+        width: 100%;
+    }
+    @media(max-width:768px){
+        font-size: 16px;
+    }
+}
+.benefits-content__buttons {
+    margin-top: 35px;
+}
+.benefits-consultation__button{
+    margin-right: 38px;
+}
+.benefits-image {
+    @media(max-width:992px){
+        margin-top: 40px;
+        img{
+            max-width: 100%;
+        }
+    }
+    @media(max-width:768px){
+        img{
+            max-width: 100%;
+        }
+    }
+}
+.benefits-more__link{
+    @media(max-width:992){
+        display: none;
+    }
+}

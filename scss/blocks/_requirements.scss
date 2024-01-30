@@ -1,0 +1,87 @@
+.requirements {
+    padding: 85px 0 25px 0; 
+    @media(max-width:992px){
+        padding: 65px 0 80px 0;
+    }
+}
+.requirements-wrapper{
+    margin-top: 75px;
+    @media(max-width:768px){
+        margin-top: 41px;
+    }
+}
+.requirements-title{
+    text-align: center;
+}
+.requirements-row{
+    display: flex;
+    align-items: center;
+    @media(max-width:992px){
+        flex-wrap: wrap-reverse;
+    }
+}
+.requirements-image{
+    max-width: 601px;
+    width: 100%;
+    margin-right: 120px;
+   @media(max-width: 1200px){
+    margin-right: 70px;
+   }
+   @media(max-width:768px){
+    margin-top: 44px;
+    margin-right: 0;
+    max-width: 100%;
+   }
+}
+.requirements-content{
+    max-width: 464px;
+    width: 100%;
+}
+.audi-uber {
+    max-width: 601px;
+    width: 100%;
+    @media(max-width:1200px){
+        max-width: 551px;
+        width: 100%;
+    }
+}
+@media(max-width:768px){
+    .list-type--lg{
+        width: 19px;
+        height: 19px;
+    }
+}
+.requirements-list {
+    margin-bottom: 44px;
+    @media(max-width: 768px){
+            margin-bottom: 22px;
+    }
+}
+.requirements-list__item {
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.requirements-list__text {
+    font-size: 16px;
+    font-style: normal;
+}
+.requirements-download {
+    max-width: 455px;
+    
+    // @media(max-width:1200px){
+    //     max-width: 165px;
+    // }
+    @media(max-width:768px){
+        display: none;
+    }
+}
+.requirements-download--mob{
+    display: none;
+    @media(max-width:768px){
+        display: block;
+        max-width: 186px;
+        width: 100%;
+    }
+}

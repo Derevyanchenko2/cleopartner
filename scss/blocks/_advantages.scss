@@ -1,0 +1,115 @@
+
+// .advantages{
+//     padding-top: 66px;
+//     padding-bottom: 105px;
+// }
+.advantages-box--mob{
+    display: none;
+    @media(max-width:768px){
+        display: block;
+        padding: 50px 0 80px 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), rgba(0, 0, 0, 0.30);
+        backdrop-filter: blur(6px);
+        border-radius: 0;
+    }
+    .advantages-title{
+        display: none;
+    }
+    .advantages-title--mob{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+.advantages-box--pc,.advantages-title{
+    @media(max-width:768px){
+        display: none;
+    }
+}
+.advantages__page-delivery{
+    padding: 60px 0 105px 0;
+}
+.advantages-title{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.advantages-box {
+    padding: 50px 20px;
+    border-radius: 42px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), rgba(0, 0, 0, 0.30);
+    @media(max-width:768px){
+        border-radius: 0;
+    }
+}
+.advantages-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    @media(max-width:768px){
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.advantages-column {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 46px;
+    @media(max-width:992px){
+        flex:  0 0 50%;
+        max-width: 50%;
+    }
+}
+.advantages-column:nth-last-child(-n+3) { //у последних трех элементов убираем отступ
+    margin-bottom: 0;
+}
+
+.advantages-column__img {
+    margin: 0 auto;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    @media(max-width:768px){
+        margin-bottom: 8px;
+    }
+}
+.advantages-column__img--green{
+    background: #2BE3A0;
+    box-shadow: 0px 17px 17px 0px rgba(43, 227, 160, 0.28);
+}
+.advantages-column__img--yellow{
+    background: #FFBF44;
+    box-shadow: 0px 17px 17px 0px rgba(255, 191, 67, 0.28);
+}
+.advantages-column__img--white{
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 17px 17px 0px rgba(255, 255, 255, 0.28);
+}
+.advantages-column__text {
+    line-height: 157.4%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    max-width: 290px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    @media(max-width:992px){
+        max-width: 230px;
+        width: 100%;
+    }
+    @media(max-width:768px){
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+    }
+}

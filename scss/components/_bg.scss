@@ -1,0 +1,378 @@
+//***main-page-bg***
+.home-bg--main{
+    position: relative;
+    background: #404040;
+    z-index: 0;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000 100%);
+        background: url(../img/main-bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: -1;
+    }
+}
+.company{
+    position: relative;
+    background: #404040;
+    z-index: 0;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000 100%);
+        background: url(../img/company-bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: -1;
+    }
+}
+.advantages--main{
+    position: relative;
+    background: #404040;
+    z-index: 0;
+    padding-top: 66px;
+    padding-bottom: 105px;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000 100%);
+        background: url(../img/bg-advantages__main-page.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: -1;   
+    }
+}
+.reviews-bg{
+    position: relative;
+    background: #404040;
+    z-index: 0;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000 100%);
+        background: url(../img/reviews-bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: -1;
+    }
+}
+.requirements-bg{
+    position: relative;
+    background: #404040;
+    z-index: 0;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.1;
+        background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000 100%);
+        background: url(../img/requirements-bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: -1;
+    }
+}
+.join{
+    position: relative;
+    background: #404040;
+    z-index: 0;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/main-bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: -1;
+    }
+}
+.contacts-bg{
+    position: relative;
+    z-index: 0;
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/contacts-bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        pointer-events: none; 
+        z-index: -1;
+    }
+}
+
+//****insurance***
+.banner-bg--insurance{
+     position: relative;
+    background: #404040;
+    z-index: 0;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.45;
+        background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000 100%);
+        background: url(../img/insurance-bg/main-bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: -1;
+    }
+}
+
+.registration-bg--insurance{
+    position: relative;
+    background: #404040;
+    z-index: 0;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/registration-img/bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: -1;
+    }
+}
+//*****
+.faq-bg--insurance{
+    position: relative;
+    background: #404040;
+    z-index: 0;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+            background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000 100%);
+        background: url(../img/faq-bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: -1;
+    }
+}
+//***delivery page background***
+.main--delivery{
+    position: relative;
+    background: #404040;
+    z-index: 0;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000 100%);
+        background: url(../img/delivery-page/main-bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: -1;  
+    }
+}
+.benefits-bg--delivery{
+    position: relative;
+    background: #404040;
+    z-index: 0;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000 100%);
+        background: url(../img/delivery-page/benefits-bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: -1;   
+    }
+}
+.advantages-bg--delivery{
+    position: relative;
+    background: #404040;
+    z-index: 0;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    @media(max-width:768px){
+        padding: 0;
+    }
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000 100%);
+        background: url(../img/delivery-page/delivery-bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: -1;   
+    }
+}
+.questions-bg--delivery{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+    background: #404040;
+    z-index: 0;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000 100%);
+        background: url(../img/questions-delivery-bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: -1;   
+    }
+}
+//****//
+.join-bg--faq{
+    position: relative;
+    background: #404040;
+    z-index: 0;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000 100%);
+        background: url(../img/faq-bg/join-bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: -1;
+    }
+}
+.questions-bg--faq{
+    position: relative;
+    background: #404040;
+    z-index: 0;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/faq-questions-bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: -1;
+    }
+}
+.range-bg--insurance{
+    position: relative;
+    background: #404040;
+    z-index: 0;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/range-bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: -1;
+    }
+}
