@@ -1,3 +1,4 @@
+
 // burger-menu
 document.querySelector(".open-menu-js").addEventListener("click", function() {
   var mobileMenuOverlay = document.querySelector(".mobileMenu-overlay");
@@ -10,8 +11,6 @@ document.querySelector(".mobileMenu-close").addEventListener("click", function()
   mobileMenuOverlay.classList.remove("open");
   document.body.style.overflowX = "auto";
 });
-
-
 
 // Slider
 document.addEventListener('DOMContentLoaded', function () {
@@ -46,23 +45,21 @@ for (i = 0; i < acc.length; i++) {
     panel.style.maxHeight = panel.scrollHeight + "px";
   }
 }
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.mobileMenu-link').forEach(link => {
+    link.addEventListener('click', e => {
+      const targetId = link.getAttribute('href');
+      if (targetId.charAt(0) !== '#') return; // Проверка, если ссылка ведет на другую страницу
+      e.preventDefault();
+      const targetElement = document.querySelector(targetId);
+      const offset = document.querySelector('.header').offsetHeight;
 
-document.addEventListener("DOMContentLoaded", function() {
-  const insuranceRange = document.getElementById("insurance-range");
-  const period = document.getElementById("range-month");
-  const cost = document.getElementById("range-price");
-
-  if (insuranceRange && period && cost) {
-      insuranceRange.addEventListener("input", function() {
-          const currentValue = parseInt(insuranceRange.value, 10) / 100; 
-          period.textContent = currentValue + " месяца";
-          cost.textContent = currentValue * 100 + " злотых"; 
+      window.scrollTo({
+        top: targetElement?.offsetTop - offset,
+        behavior: 'smooth'
       });
-  }
+
+      document.querySelector('.mobileMenu-close').click();
+    });
+  });
 });
-
-
-
-//map 
-
-
