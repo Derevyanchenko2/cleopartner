@@ -15,7 +15,11 @@ document.querySelector(".mobileMenu-close").addEventListener("click", function()
 
 // Slider
 document.addEventListener('DOMContentLoaded', function () {
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.reviews-swiper', {
+    observer: true,
+    observeParents: true,
+    slidesPerView: "auto",
+    speed: 800,
       navigation: {
           nextEl: '.next-btn',
           prevEl: '.prev-btn',
