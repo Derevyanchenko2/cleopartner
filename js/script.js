@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-//accordion
+//Accordion
 var acc = document.getElementsByClassName("questions-accordion");
 var i;
 for (i = 0; i < acc.length; i++) {
@@ -45,6 +45,7 @@ for (i = 0; i < acc.length; i++) {
     panel.style.maxHeight = panel.scrollHeight + "px";
   }
 }
+
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll('.mobileMenu-link').forEach(link => {
     link.addEventListener('click', e => {

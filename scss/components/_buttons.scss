@@ -46,3 +46,8 @@
         color: #E9BC47;
     }
 }
+.swiper-button-disabled{
+    transition: all .3s ease 0s;
+    cursor: auto;
+    pointer-events: none
+}
