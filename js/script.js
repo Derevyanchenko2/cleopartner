@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener('click', e => {
       const targetId = link.getAttribute('href');
       if (targetId.charAt(0) !== '#') return; // Проверка, если ссылка ведет на другую страницу
-      e.preventDefault();
       const targetElement = document.querySelector(targetId);
       const offset = document.querySelector('.header').offsetHeight;
 
@@ -64,3 +63,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Range 
+const rangeInput = document.getElementById('insurance-range');
+const rangeMonth = document.getElementById('range-month');
+const rangePrice = document.getElementById('range-price');
+
+function updateInsuranceInfo() {
+    const months = parseInt(rangeInput.value);
+    const price = months * 100; 
+
+    rangeMonth.textContent = months + ' месяц' + (months !== 1 ? 'а' : ''); 
+    rangePrice.textContent = price + ' злотых';
+}
+
+rangeInput.addEventListener('input', updateInsuranceInfo);
+
+updateInsuranceInfo();
+
+
